@@ -6,7 +6,7 @@ body {
 header {
   padding: 40px;
   background: #CD919E;
-  border-bottom: 5px groove;
+  border-bottom: 5px double #ede0e5;
 }
 
 h1 {
@@ -16,8 +16,18 @@ h1 {
   margin: 10px auto;
 }
 
+h2 {
+  text-align: left;
+  color: #492432;
+}
+
+h3 {
+  text-align: right;
+  color: #492432;
+}
+
 a {
-  color: #4d0039;
+  color: #492432;
 }
 
 nav {
@@ -31,15 +41,51 @@ nav {
   font-size: 1.5rem;
 }
 
-article {
+.extraBottomMargin {
+  margin-bottom: 40px;
+}
+
+section {
   padding: 20px 0px 20px;
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto;
 }
 
+article {
+  margin-bottom: 15px;
+  padding: 30px;
+  min-height: 150px;
+  //same as image
+}
+
+article:nth-child(odd) {
+  background: #ede0e5;
+  border-top: 1px solid #492432;
+  border-bottom: 1px solid #492432;
+}
+
+article:nth-child(odd) h3 {
+  text-align: left;
+}
+
+article:nth-child(odd) img {
+  float: left;
+  margin-right: 20px;
+}
+
+article:nth-child(even) img {
+  float: right;
+  margin-left: 20px;
+}
+
 footer {
+  border-top: 5px double #ede0e5;
   padding: 40px;
-  background: #8B8386;
+  background: #492432;
+}
+
+footer img {
+  margin: 10px;
 }
 
 #me {
